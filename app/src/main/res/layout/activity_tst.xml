@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTintMode="src_over"
+    tools:context=".TstActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineV0.5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.12" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineV1.5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.38" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineV3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineV3.5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.87" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHUpper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineH1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineH2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineH3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineH4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineH5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineH6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <TextView
+        android:id="@+id/textC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/allerta_stencil"
+        android:shadowColor="#757575"
+        android:text="Celsius"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineH4"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineV1.5"
+        app:layout_constraintTop_toTopOf="@+id/guidelineH5" />
+
+    <EditText
+        android:id="@+id/editC"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/underline_c_selector"
+        android:ems="10"
+        android:fontFamily="@font/allerta_stencil"
+        android:inputType="numberDecimal"
+        android:textColor="#757575"
+        android:textCursorDrawable="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/textC"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineV3"
+        app:layout_constraintStart_toStartOf="@+id/guidelineV1.5"
+        app:layout_constraintTop_toTopOf="@+id/textC"
+        app:layout_constraintVertical_bias="0.388" />
+
+    <TextView
+        android:id="@+id/symbolC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/allerta_stencil"
+        android:text="°C"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editC"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineV3.5"
+        app:layout_constraintStart_toEndOf="@+id/editC"
+        app:layout_constraintTop_toTopOf="@+id/editC" />
+
+    <TextView
+        android:id="@+id/textF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/allerta_stencil"
+        android:text="Fahrenheit"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineH3"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineV1.5"
+        app:layout_constraintTop_toTopOf="@+id/guidelineH4" />
+
+    <EditText
+        android:id="@+id/editF"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/underline_f_selector"
+        android:ems="10"
+        android:fontFamily="@font/allerta_stencil"
+        android:inputType="numberDecimal"
+        android:textColor="#757575"
+        android:textCursorDrawable="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/textF"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineV3"
+        app:layout_constraintStart_toStartOf="@+id/guidelineV1.5"
+        app:layout_constraintTop_toTopOf="@+id/textF" />
+
+    <TextView
+        android:id="@+id/symbolF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/allerta_stencil"
+        android:text="°F"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editF"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineV3.5"
+        app:layout_constraintStart_toEndOf="@+id/editF"
+        app:layout_constraintTop_toTopOf="@+id/editF" />
+
+    <TextView
+        android:id="@+id/textK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/allerta_stencil"
+        android:text="Kelvin"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineH2"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineV1.5"
+        app:layout_constraintTop_toTopOf="@+id/guidelineH3" />
+
+    <EditText
+        android:id="@+id/editK"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/underline_k_selector"
+        android:ems="10"
+        android:fontFamily="@font/allerta_stencil"
+        android:inputType="numberDecimal"
+        android:textColor="#757575"
+        android:textCursorDrawable="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/textK"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineV3"
+        app:layout_constraintStart_toStartOf="@+id/guidelineV1.5"
+        app:layout_constraintTop_toTopOf="@+id/textK"
+        app:layout_constraintVertical_bias="0.833" />
+
+    <TextView
+        android:id="@+id/symbolK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/allerta_stencil"
+        android:text="K"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editK"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineV3.5"
+        app:layout_constraintStart_toEndOf="@+id/editK"
+        app:layout_constraintTop_toTopOf="@+id/editK" />
+
+    <TextView
+        android:id="@+id/textRa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/allerta_stencil"
+        android:text="Rankine"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineH1"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineV1.5"
+        app:layout_constraintTop_toTopOf="@+id/guidelineH2" />
+
+    <EditText
+        android:id="@+id/editRa"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/underline_ra_selector"
+        android:ems="10"
+        android:fontFamily="@font/allerta_stencil"
+        android:inputType="numberDecimal"
+        android:textColor="#757575"
+        android:textCursorDrawable="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/textRa"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineV3"
+        app:layout_constraintStart_toStartOf="@+id/guidelineV1.5"
+        app:layout_constraintTop_toTopOf="@+id/textRa" />
+
+    <TextView
+        android:id="@+id/symbolRa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/allerta_stencil"
+        android:text="°Ra"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editRa"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineV3.5"
+        app:layout_constraintStart_toEndOf="@+id/editRa"
+        app:layout_constraintTop_toTopOf="@+id/editRa" />
+
+    <Button
+        android:id="@+id/btnMainActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#FFAC92"
+        android:fontFamily="@font/monoton"
+        android:text="2*2"
+        android:textColor="#FFEB3B"
+        android:textSize="25dp"
+        app:cornerRadius="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHUpper"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.62"
+        app:layout_constraintStart_toStartOf="@+id/guidelineV3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageTemp"
+        android:layout_width="90dp"
+        android:layout_height="95dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:srcCompat="@drawable/smart_temperature" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/allerta_stencil"
+        android:text="Simple Temperature Converter.\nConvert between Celsius (°C),\nFahrenheit (°F), Kelvin (K) and\nRankine (°Ra)."
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageTemp"
+        app:layout_constraintTop_toTopOf="@+id/guidelineH1"
+        app:layout_constraintVertical_bias="0.493" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
